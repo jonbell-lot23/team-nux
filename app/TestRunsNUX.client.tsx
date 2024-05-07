@@ -80,7 +80,7 @@ module.exports = defineConfig({
     <div className={styles["container"]}>
       <div className={styles["form-container"]}>
         <div className={styles["instructions"]}>
-          <h1 className={styles["default"]}>Let's get started!</h1>
+          <h1 className={styles["default"]}>Let&apos;s get started!</h1>
           <p>
             Please select your test runner and follow the instructions below. If
             you have any questions, please check out our{" "}
