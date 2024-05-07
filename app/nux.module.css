@@ -1,0 +1,166 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--theme-base-100);
+}
+
+.backgroundImage {
+  height: 100vh;
+  width: 50%;
+  background-image: url("/nux-1.png");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-color: #ffbf4a;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 50%;
+  overflow: auto;
+  max-height: 100vh;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+/* Style the input and select fields */
+.input-style,
+.select-style,
+.textarea-style,
+.textarea-style-pre {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: var(--theme-text-field-bgcolor);
+  font-family: var(--font-family-monospace);
+  font-size: var(--font-size-regular-monospace);
+}
+
+.select-style,
+.team-name {
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-large);
+}
+
+.textarea-style-pre {
+  margin-bottom: 60px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto;
+}
+
+.textarea-style {
+  font-size: 12px;
+}
+
+.select-style {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M6.707 8.707a1 1 0 0 1-1.414 0L2.293 5.707A1 1 0 0 1 3.707 4.293L6 6.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-3 3z" fill="%23999" fill-rule="evenodd"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 12px 12px;
+}
+
+.teamNameContainer {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+.saveButton {
+  background-color: var(--background-color-disabled-button);
+  padding: 0.75rem 1rem;
+  color: #ffffff;
+  height: fit-content;
+  border-radius: 0.5rem;
+}
+
+/* Style the horizontal rule to match the design */
+hr.default {
+  border: none;
+  border-top: 1px solid var(--theme-base-90);
+  margin: 20px 0;
+}
+
+/* Style the instructions list */
+
+.instructions {
+  font-size: 16px;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.instructions h1 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.instructions-list {
+  list-style: none;
+  padding: 0;
+}
+
+.instructions-list li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+h1.default {
+  font-size: 24px;
+}
+
+.section-header {
+  padding-top: 20px;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.step-number {
+  font-weight: 500;
+  margin-bottom: 6px;
+  margin-top: 24px;
+}
+
+.step-number a {
+  text-decoration: underline;
+}
+
+.text-description {
+  margin-top: 24px;
+}
+
+.code {
+  font-family: var(--font-family-monospace);
+  background-color: var(--theme-base-90);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+h1.default {
+  font-weight: 500;
+}
+
+/* Optional: Add a responsive breakpoint */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 10px;
+  }
+
+  .input-style,
+  .select-style,
+  .textarea-style {
+    padding: 8px;
+  }
+
+  h1.default {
+    font-size: 20px;
+  }
+}
